@@ -12,8 +12,10 @@ app.get("/", (req, res) => {
 });
 
 const product = require("./routers/product");
+const transaction = require("./routers/transaction");
 
 app.use("/products", product);
+app.use("/transactions", transaction);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
