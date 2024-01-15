@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("API ready to use 🚀🐱‍🏍");
 });
 
 const product = require("./routers/product");
